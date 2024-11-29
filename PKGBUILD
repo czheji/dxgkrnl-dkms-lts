@@ -8,16 +8,16 @@ arch=('i686' 'x86_64')
 url="https://github.com/microsoft/WSL2-Linux-Kernel/"
 license=('GPL2')
 depends=('dkms')
-makedepends=('git' 'linux-headers')
+makedepends=('git' 'linux-lts-headers')
 provides=("dxgkrnl")
 conflicts=("dxgkrnl")
-pkgver=5.6.rc2.r242412.gf53bd0a62a32
+pkgver=6.6.rc0.r242412.e458890
 pkgrel=1
 # epoch 0: ver number has "v" as the prefix
 epoch=1
 
 source=(
-        "git+https://github.com/microsoft/WSL2-Linux-Kernel.git#branch=linux-msft-wsl-6.1.y"
+        "git+https://github.com/microsoft/WSL2-Linux-Kernel.git#branch=linux-msft-wsl-6.6.y"
         "dkms.conf"
         "extra-defines.h"
 )
